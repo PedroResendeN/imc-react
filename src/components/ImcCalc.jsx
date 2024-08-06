@@ -1,6 +1,7 @@
+import Button from "./Button.jsx";
 import "./ImcCalc.css"
 
-const ImcCalc = () => {
+function ImcCalc () {
   return (
     <div id="calc-container">
       <h2>Calculadora de IMC</h2>
@@ -26,12 +27,12 @@ const ImcCalc = () => {
           </div>
         </div>
         <div className="action-control">
-            <button>Calcular</button>
-            <button>Limpar</button>
+          <Button id="calc-btn" text="Calcular" />
+          <Button id="clear-btn" text="Limpar" />
         </div>
       </form>
     </div>
   );
-}
+};
 
 export default ImcCalc
